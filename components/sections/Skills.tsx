@@ -2,7 +2,7 @@
 
 import { Code, Database, Wrench, Globe } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 import { skillsData, Skill } from '@/data/skills';
 
 const Skills = () => {
@@ -60,10 +60,12 @@ const Skills = () => {
                           {skill.level}%
                         </span>
                       </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2 bg-gray-200"
-                      />
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-300"
+                          style={{ width: `${skill.level}%` }}
+                        ></div>
+                      </div>
                     </div>
                   ))}
                 </CardContent>
