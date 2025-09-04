@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle with modern gradient -->
+  <circle cx="16" cy="16" r="15" fill="url(#techGradient)" stroke="#ffffff" stroke-width="0.5" opacity="0.95"/>
+  
+  <!-- Geometric background pattern -->
+  <path d="M8 8 L24 8 L20 12 L12 12 Z" fill="rgba(255,255,255,0.1)"/>
+  <path d="M8 24 L24 24 L20 20 L12 20 Z" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Letter F -->
+  <path d="M10 9 L10 23 L12 23 L12 17 L18 17 L18 15 L12 15 L12 11 L19 11 L19 9 Z" 
+        fill="#ffffff" 
+        stroke="#ffffff" 
+        stroke-width="0.2" 
+        filter="url(#glow)"/>
+  
+  <!-- Letter P -->
+  <path d="M21 9 L21 23 L23 23 L23 17 L26 17 C27.1 17 28 16.1 28 15 L28 11 C28 9.9 27.1 9 26 9 Z M23 11 L26 11 L26 15 L23 15 Z" 
+        fill="#ffffff" 
+        stroke="#ffffff" 
+        stroke-width="0.2" 
+        filter="url(#glow)"/>
+  
+  <!-- Decorative tech elements -->
+  <circle cx="7" cy="7" r="1" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.6)"/>
+  <rect x="6" y="25" width="2" height="1" fill="rgba(255,255,255,0.4)"/>
+  <rect x="24" y="6" width="2" height="1" fill="rgba(255,255,255,0.4)"/>
+</svg>

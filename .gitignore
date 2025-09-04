@@ -1,0 +1,11 @@
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+/.next/
+/out/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+node_modules/
+jspm_packages/
