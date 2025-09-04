@@ -14,7 +14,7 @@ export interface TimelineItem {
 export const timelineData: TimelineItem[] = [
   {
     id: 'exp-5',
-    type: 'experience',
+    type: 'experience' as const,
     title: 'Développeur Web Full-Stack',
     subtitle: 'Auto-entrepreneur / Web FP',
     period: 'Août 2025 - Aujourd\'hui',
@@ -29,7 +29,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'exp-4',
-    type: 'experience',
+    type: 'experience' as const,
     title: 'Développeur Full-Stack',
     subtitle: 'SASWAVE',
     period: 'Avril 2025 - Août 2025',
@@ -44,7 +44,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'exp-3',
-    type: 'experience',
+    type: 'experience' as const,
     title: 'Développeur Web & Social Media Manager',
     subtitle: 'Les Châlets de Tesa',
     period: 'Sept 2024 - Mars 2025',
@@ -59,7 +59,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'exp-2',
-    type: 'experience',
+    type: 'experience' as const,
     title: 'Chargé d\'affaires & Chargé de mission évènementiel',
     subtitle: 'Junior Conseil Taker',
     period: 'Sept 2024 - Juil 2025',
@@ -74,7 +74,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'exp-1',
-    type: 'experience',
+    type: 'experience' as const,
     title: 'Développeur Web',
     subtitle: 'Numericu',
     period: 'Sept 2023 - Déc 2023',
@@ -89,7 +89,7 @@ export const timelineData: TimelineItem[] = [
   },
   { 
     id: 'edu-3',
-    type: 'education',
+    type: 'education' as const,
     title: 'Master Lead Développement Full-Stack',
     subtitle: 'EEMI Lyon',
     period: '2025 - 2027',
@@ -99,7 +99,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'edu-2',
-    type: 'education',
+    type: 'education' as const,
     title: 'Programme Grande École, spécialité informatique',
     subtitle: 'Epitech Technology - Lyon',
     period: '2022 - 2025',
@@ -109,7 +109,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     id: 'edu-1',
-    type: 'education',
+    type: 'education' as const,
     title: 'Baccalauréat Scientifique',
     subtitle: 'Lycée polyvalent de Balagne',
     period: '2019 - 2022',

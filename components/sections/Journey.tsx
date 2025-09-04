@@ -3,7 +3,7 @@
 import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { timelineData } from '@/data/timeline';
+import { timelineData, TimelineItem } from '@/data/timeline';
 
 const Journey = () => {
   return (
